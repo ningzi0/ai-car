@@ -1,0 +1,5 @@
+/* pages/register/register.wxss */
+.register-content{
+  padding: 3em 0 0;
+}
+

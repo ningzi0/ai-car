@@ -1,0 +1,27 @@
+<!--pages/inspect2/inspect2.wxml-->
+<!-- <view class="inspect2">
+    <view class="inspect-img">
+        <text>正在检车中</text>
+        <image src="../images/car-ico.png" mode="aspectFill"></image>
+    </view>
+    <view class="inspect-table">
+        <view class="item plate">
+            <text>车牌号：贵A·AW156</text>
+        </view>
+        <view class="item scu">
+            <text>完成</text>
+        </view>
+    </view>
+</view> -->
+
+<view class="inspect2">
+    <view class="in-footer">
+        <image src="../images/car.png"  mode="aspectFill"></image>
+    </view>
+    <view class="in-table">
+        <text>上一辆</text>
+        <text>车牌号：贵A·FL186</text>
+        <text>下一辆</text>
+    </view>
+    <view class="suc">完成</view>
+</view>

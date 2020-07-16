@@ -1,0 +1,59 @@
+/* pages/VehicleLane/VehicleLane.wxss */
+page{
+  background-color: #f9f9f9;
+}
+
+.vehiclelaneCon{
+  display: block;
+  width: 96%;
+  box-sizing: border-box;
+  margin: 2%;
+  padding: 2%;
+}
+.vehiclelaneCon .item{
+  margin: 2% 0;
+  border: 1px solid #eee;
+}
+.vehiclelaneCon .item:nth-child(odd){
+  background-color: #fafafa;
+}
+
+.vehiclelaneCon .item .num{
+  font-size: 0.85em;
+  padding: 5% 0;
+  background-color: rgb(243, 243, 243);
+}
+
+.vehiclelaneCon .item  .carnum text{
+  font-size: 0.85em;
+  padding: 2% 0;
+  display: block;
+}
+.vehiclelaneCon .item  .carnum .carnumText{
+  font-size: 2em;
+  font-weight: bold;
+}
+.vehiclelaneCon .item .carbtn{
+  margin: 3% 0 0;
+}
+.vehiclelaneCon .item .carbtn button{
+  display: inline-block;
+  width: 48%;
+  margin: 0 0.5%;
+  color: #fff;
+}
+.vehiclelaneCon .item .carbtn button:nth-child(1){
+  background-color: #f6aa4f;
+}
+.vehiclelaneCon .item .carbtn button:nth-child(2){
+  background-color: #1588b6;
+}
+
+
+
+
+
+
+
+
+

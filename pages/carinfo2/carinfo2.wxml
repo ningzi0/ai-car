@@ -1,0 +1,104 @@
+<view class="login">
+    <view class="return" bindtap="returnPre">
+      <image src="../images/return.png" mode="aspectFill"></image>
+    </view>
+
+    <view class="bgimg">
+        <image src="../images/bgimg.png" mode="aspectFill"></image>
+    </view>
+
+    <view class="title">
+        <text class="h1">车辆信息</text>
+    </view>
+
+    <view class="content login-content register-content carinfo2-content">
+        <view class="ul">
+            <view class="li">
+                <text>车牌号：</text><text>贵A·TU123</text>
+            </view>
+            <view class="li">
+                <text>车辆型号：</text><text>雷克萨斯 CT 2019款 CT200h精英版</text>
+            </view>
+            <view class="li">
+                <text>车龄：</text><text>3年</text>
+            </view>
+            <view class="li">
+                <text>登记大本：</text><image src="../images/img-ico.png"></image>
+            </view>
+            <view class="li">
+                <text>行驶证：</text><image src="../images/img-ico.png"></image>
+            </view>
+        </view>
+
+    </view>
+
+
+    
+
+<navigator url="../payment/payment">
+    <view class="car-pay">
+        <text>支付过户费</text><text>(￥180)</text>
+    </view>
+</navigator>
+
+
+
+
+
+
+
+
+
+
+
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

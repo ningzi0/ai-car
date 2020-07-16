@@ -1,0 +1,64 @@
+<view class="vehiclelane">
+
+    <view class="vehiclelaneCon inspect">
+        <view class="item on">
+            <text>1号 已被选择</text>
+            <image src="../images/car-ico.png"  mode="aspectFill"></image>
+            <image src="../images/car-ico.png"  mode="aspectFill"></image>
+            <image src="../images/car-ico.png"  mode="aspectFill"></image>
+            
+        </view>
+        <view class="item on">
+            <text>2号 已被选择</text>
+            <image src="../images/car-ico.png"  mode="aspectFill"></image>
+            <image src="../images/car-ico.png"  mode="aspectFill"></image>
+            <image src="../images/car-ico.png"  mode="aspectFill"></image>
+        </view>
+        <view class="item">
+            <text>3号 待定可选</text>
+            <image src="../images/car-ico.png"  mode="aspectFill"></image>
+            <image src="../images/car-ico.png"  mode="aspectFill"></image>
+            <image src="../images/car-ico.png"  mode="aspectFill"></image>
+        </view>
+    </view>
+    <view class="vehiclelaneText">
+        <view class="p">tips：1号、2号车道已被选择，为避免冲突，建议选择其他车道</view>
+    </view>
+
+    
+
+    <navigator url="../inspect2/inspect2"><view class="seclet">当前选择1号车道<text>(该车道已被选择，建议更换)</text></view></navigator>
+
+
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

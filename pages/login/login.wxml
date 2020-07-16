@@ -1,0 +1,109 @@
+<view class="login">
+    <view class="bgimg">
+        <image src="../images/bgimg.png" mode="aspectFill"></image>
+    </view>
+    <view class="title">
+        <text class="h1">登录</text>
+        <text class="span">请登录您的账号</text>
+    </view>
+
+
+
+
+    <view class="content login-content">
+        <view class="ul">
+            <view class="li">
+                <view class="ico">
+                    <image src="../images/account-ico.png"></image>
+                </view>
+                <input type="text" placeholder="请输入账号/手机号/邮箱地址" placeholder-style="color:#9b9b9b"></input>
+            </view>
+            <view class="li">
+                <view class="ico">
+                    <image src="../images/password-ico.png"></image>
+                </view>
+                <input type="text" placeholder="请输入密码" placeholder-style="color:#9b9b9b"></input>
+            </view>
+        </view>
+
+
+        <view class="submit clearfix" bindtap="toindex">
+            
+                <button>登录　→</button>
+            
+        </view>
+
+    </view>
+
+
+
+    <view class="no">
+        <view class="span">还没有账号？</view><navigator url="../register/register">立即注册</navigator>
+    </view>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

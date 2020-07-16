@@ -1,0 +1,44 @@
+/* pages/security/security.wxss */
+.security .ul .li {
+  margin: 2%;
+  background: linear-gradient(to right, #eec667 , #f6a74d);
+  font-size:0.85em ;
+  border-radius: 0.5em;
+}
+.security .ul .li:nth-child(even){
+  background: linear-gradient(to right, #599559 , #A3A443);
+}
+.security .ul .li .li-item{
+  display: flex;
+}
+.security .ul .li .li-item .flex-item{
+  flex: 1;
+  padding: 2%;
+}
+.security .ul .li .li-item .flex-item .flex-phone,.flex-span{
+  padding:5% 3%;
+}
+.security .ul .li .li-item .flex-item .flex-phone:last-child{
+  text-align: center;
+  background-color: rgba(0, 94, 216, 0.151);
+  color: #fff;
+  border-radius: 10em;
+}
+
+.itembtn{
+  display: flex;
+  border-top: 1px solid rgba(255, 255, 255, 0.205);
+  padding: 2%;
+}
+.itembtn .itemB-li{
+  flex: 1;
+  text-align: center;
+  padding: 3% 0;
+  border-right: 1px solid rgba(255, 255, 255, 0.205);
+  
+}
+.itembtn .itemB-li:last-child{
+  border-right: 0;
+}
+
+
