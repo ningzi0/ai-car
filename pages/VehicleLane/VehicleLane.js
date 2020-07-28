@@ -5,9 +5,28 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    date: '预约',
+    date2: '预约',
+    date3: '预约',
   },
-
+  bindDateChange: function(e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      date: e.detail.value
+    })
+  },
+  bindDateChange2: function(e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      date2: e.detail.value
+    })
+  },
+  bindDateChange3: function(e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      date3: e.detail.value
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

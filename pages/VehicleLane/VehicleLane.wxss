@@ -36,17 +36,20 @@ page{
 .vehiclelaneCon .item .carbtn{
   margin: 3% 0 0;
 }
-.vehiclelaneCon .item .carbtn button{
+.vehiclelaneCon .item .carbtn button,.vehiclelaneCon .item .carbtn picker{
   display: inline-block;
   width: 48%;
   margin: 0 0.5%;
   color: #fff;
+  vertical-align: middle;
 }
 .vehiclelaneCon .item .carbtn button:nth-child(1){
   background-color: #f6aa4f;
 }
-.vehiclelaneCon .item .carbtn button:nth-child(2){
+.vehiclelaneCon .item .carbtn picker{
   background-color: #1588b6;
+  padding: 2.7% 0;
+  border-radius: 0.2em;
 }
 
 

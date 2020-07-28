@@ -9,7 +9,11 @@
             </view>
             <view class="carbtn">
                 <button>排队</button>
-                <button>预约</button>
+                <picker mode="date" value="{{date}}" start="2015-09-01" end="9999-09-01" bindchange="bindDateChange">
+                    <view class="picker">
+                     {{date}}
+                    </view>
+                </picker>
             </view>
         </view>
         <view class="item">
@@ -20,7 +24,11 @@
             </view>
             <view class="carbtn">
                 <button>排队</button>
-                <button>预约</button>
+                <picker mode="date" value="{{date2}}" start="2015-09-01" end="9999-09-01" bindchange="bindDateChange2">
+                    <view class="picker">
+                     {{date2}}
+                    </view>
+                </picker>
             </view>
         </view>
         <view class="item">
@@ -31,7 +39,11 @@
             </view>
             <view class="carbtn">
                 <button>排队</button>
-                <button>预约</button>
+                <picker mode="date" value="{{date3}}" start="2015-09-01" end="9999-09-01" bindchange="bindDateChange3">
+                    <view class="picker">
+                     {{date3}}
+                    </view>
+                </picker>
             </view>
         </view>
     </view>
