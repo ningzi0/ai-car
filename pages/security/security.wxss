@@ -1,44 +1,46 @@
-/* pages/security/security.wxss */
-.security .ul .li {
+.security .item{
+  background-color: #80c269;
   margin: 2%;
-  background: linear-gradient(to right, #eec667 , #f6a74d);
-  font-size:0.85em ;
-  border-radius: 0.5em;
+  position: relative;
 }
-.security .ul .li:nth-child(even){
-  background: linear-gradient(to right, #599559 , #A3A443);
+.security .item .itemText{
+  padding: 5%;
 }
-.security .ul .li .li-item{
-  display: flex;
-}
-.security .ul .li .li-item .flex-item{
-  flex: 1;
-  padding: 2%;
-}
-.security .ul .li .li-item .flex-item .flex-phone,.flex-span{
-  padding:5% 3%;
-}
-.security .ul .li .li-item .flex-item .flex-phone:last-child{
-  text-align: center;
-  background-color: rgba(0, 94, 216, 0.151);
-  color: #fff;
-  border-radius: 10em;
+.security .item text{
+    display: block;
+    font-size:0.85em;
+    line-height: 1.75;
+    color: #fff;
+    font-weight: 200;
+    letter-spacing: 0.1em;
 }
 
-.itembtn{
-  display: flex;
-  border-top: 1px solid rgba(255, 255, 255, 0.205);
-  padding: 2%;
+
+.security .img{
+  position: absolute;
+  opacity: 0.08;
+  top: 0;
+  right: 0;
 }
-.itembtn .itemB-li{
+.security .img image{
+  width: 7em;
+  height: 7em;
+}
+
+.btn{
+  display: flex;
+}
+.btn .btnitem{
   flex: 1;
   text-align: center;
+}
+
+.btn .btnitem:nth-child(1){
+  background-color: #DD9F54;
+}
+.btn .btnitem:nth-child(2){
+  background-color: #7D9871;
+}
+.btn .btnitem{
   padding: 3% 0;
-  border-right: 1px solid rgba(255, 255, 255, 0.205);
-  
 }
-.itembtn .itemB-li:last-child{
-  border-right: 0;
-}
-
-

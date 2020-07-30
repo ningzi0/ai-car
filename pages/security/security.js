@@ -5,7 +5,22 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    arr:[{
+      carnum:'贵A·66666',
+      phonenum:'15185070538',
+      fadongjinum:'xxxxxxx',
+      src:'/pages/images/shenhe.png'
+    },{
+      carnum:'贵A·66666',
+      phonenum:'15185070538',
+      fadongjinum:'xxxxxxx',
+      src:'/pages/images/shenhe.png'
+    },{
+      carnum:'贵A·66666',
+      phonenum:'15185070538',
+      fadongjinum:'xxxxxxx',
+      src:'/pages/images/shenhe.png'
+    }]
   },
 
   /**

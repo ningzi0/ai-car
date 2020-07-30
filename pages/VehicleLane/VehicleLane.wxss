@@ -1,62 +1,68 @@
-/* pages/VehicleLane/VehicleLane.wxss */
-page{
-  background-color: #f9f9f9;
-}
-
-.vehiclelaneCon{
-  display: block;
-  width: 96%;
-  box-sizing: border-box;
+.shencheCon .item{
+  background-color: #80c269;
+  color: #fff;
+  border-radius: 0.75em;
   margin: 2%;
-  padding: 2%;
+  padding: 8%;
+  position: relative;
 }
-.vehiclelaneCon .item{
-  margin: 2% 0;
-  border: 1px solid #eee;
-}
-.vehiclelaneCon .item:nth-child(odd){
-  background-color: #fafafa;
-}
-
-.vehiclelaneCon .item .num{
-  font-size: 0.85em;
-  padding: 5% 0;
-  background-color: rgb(243, 243, 243);
-}
-
-.vehiclelaneCon .item  .carnum text{
-  font-size: 0.85em;
-  padding: 2% 0;
-  display: block;
-}
-.vehiclelaneCon .item  .carnum .carnumText{
-  font-size: 2em;
+.shencheCon .item .h3{
+  font-size: 1.7em;
   font-weight: bold;
 }
-.vehiclelaneCon .item .carbtn{
-  margin: 3% 0 0;
+.shencheCon .item .text{
+  font-size: 0.85em;
+  font-weight: 200;
+  letter-spacing: 0.1em;
+  color: rgba(255,255,255,0.4);
 }
-.vehiclelaneCon .item .carbtn button,.vehiclelaneCon .item .carbtn picker{
+.shencheCon .item .go{
+  font-size: 0.85em;
+  background-color: #f0eee3;
+  color: #000;
+  padding: 4% 10%;
   display: inline-block;
-  width: 48%;
-  margin: 0 0.5%;
-  color: #fff;
-  vertical-align: middle;
+  margin-top:5% ;
 }
-.vehiclelaneCon .item .carbtn button:nth-child(1){
-  background-color: #f6aa4f;
+.shencheCon .item .go:active{
+  background-color: #e7e4d2;
 }
-.vehiclelaneCon .item .carbtn picker{
-  background-color: #1588b6;
-  padding: 2.7% 0;
-  border-radius: 0.2em;
+.item-text{
+  position: relative;
+  z-index: 55;
+}
+.img{
+  position: absolute;
+  top: 0;
+  right: -5%;
+}
+.img image{
+  width: 12.8em;
+  height: 12.8em;
+  opacity: 0.08;
 }
 
 
+.paiduiCon .item{
+  background-color: #7d9871;
+  min-height: 80vh;
+  position: relative;
+}
+.paiduiCon .item .item-text{
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(0%,-50%);
+  width: 100%;
+  text-align: center;
+}
 
-
-
-
-
-
+.paiduiCon .item .img{
+  position: absolute;
+  top: 50%;
+  transform: translate(0,-50%);
+}
+.paiduiCon .item .item-text .go{
+  font-size:1.1em ;
+}
 

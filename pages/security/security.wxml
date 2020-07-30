@@ -1,87 +1,25 @@
 <input type="text" class="search" confirm-type="search" placeholder="搜索车牌号"></input>
 <view class="security">
-    <view class="ul">
-        <view class="li">
-            <view class="li-item">
-                <view class="flex-item">
-                    <view class="flex-span">车牌：贵A·FL565</view>
-                    <view class="flex-span">车道：1号车道</view>
-                </view>
-                <view class="flex-item">
-                    <view class="flex-phone">手机号：18755569360</view>
-                    <view class="flex-phone">立即拨打</view>
-                </view>
+    <block wx:for="{{arr}}">
+        <view class="item">
+            <view class="itemText">
+                <text>车牌号：{{item.carnum}}</text>
+                <text>手机号：{{item.phonenum}}</text>
+                <text>发动机号：{{item.fadongjinum}}</text>
             </view>
-            <view class="itembtn">
-                <view class="itemB-li">
-                    <text>添加队列</text>
+            <view class="img">
+                <image src="{{item.src}}" mode="aspectFill"></image>
+            </view>
+            <view class="btn">
+                <view class="btnitem">
+                    <text>审核完成</text>
                 </view>
-                <view class="itemB-li">
-                    <text>取消</text>
+                <view class="btnitem">
+                    <text>审核不通过</text>
                 </view>
             </view>
         </view>
-        <view class="li">
-            <view class="li-item">
-                <view class="flex-item">
-                    <view class="flex-span">车牌：贵A·FL565</view>
-                    <view class="flex-span">车道：1号车道</view>
-                </view>
-                <view class="flex-item">
-                    <view class="flex-phone">手机号：18755569360</view>
-                    <view class="flex-phone">立即拨打</view>
-                </view>
-            </view>
-            <view class="itembtn">
-                <view class="itemB-li">
-                    <text>添加队列</text>
-                </view>
-                <view class="itemB-li">
-                    <text>取消</text>
-                </view>
-            </view>
-        </view>
-        <view class="li">
-            <view class="li-item">
-                <view class="flex-item">
-                    <view class="flex-span">车牌：贵A·FL565</view>
-                    <view class="flex-span">车道：1号车道</view>
-                </view>
-                <view class="flex-item">
-                    <view class="flex-phone">手机号：18755569360</view>
-                    <view class="flex-phone">立即拨打</view>
-                </view>
-            </view>
-            <view class="itembtn">
-                <view class="itemB-li">
-                    <text>添加队列</text>
-                </view>
-                <view class="itemB-li">
-                    <text>取消</text>
-                </view>
-            </view>
-        </view>
-        <view class="li">
-            <view class="li-item">
-                <view class="flex-item">
-                    <view class="flex-span">车牌：贵A·FL565</view>
-                    <view class="flex-span">车道：1号车道</view>
-                </view>
-                <view class="flex-item">
-                    <view class="flex-phone">手机号：18755569360</view>
-                    <view class="flex-phone">立即拨打</view>
-                </view>
-            </view>
-            <view class="itembtn">
-                <view class="itemB-li">
-                    <text>添加队列</text>
-                </view>
-                <view class="itemB-li">
-                    <text>取消</text>
-                </view>
-            </view>
-        </view>
-    </view>
+    </block>
 </view>
 
 

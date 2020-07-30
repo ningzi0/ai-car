@@ -1,62 +1,30 @@
 <view class="vehiclelane">
-
-    <view class="vehiclelaneCon">
-        <view class="item">
-            <view class="num">1号车道</view>
-            <view class="carnum">
-                <text>当前数量：</text>
-                <view class="carnumText">33辆</view>
+    <view class="shencheCon" style="display:none">
+        <block wx:for="{{arr}}">
+            <view class="item">
+                <view class="item-text">
+                    <view class="h3">{{item.chedao}}</view>
+                    <view class="text">{{item.des}}</view>
+                    <view class="go">{{item.go}}</view>
+                </view>
+                <view class="img">
+                    <image src="/pages/images/tai.png" mode="aspectFill"></image>
+                </view>
             </view>
-            <view class="carbtn">
-                <button>排队</button>
-                <picker mode="date" value="{{date}}" start="2015-09-01" end="9999-09-01" bindchange="bindDateChange">
-                    <view class="picker">
-                     {{date}}
-                    </view>
-                </picker>
-            </view>
-        </view>
-        <view class="item">
-            <view class="num">2号车道</view>
-            <view class="carnum">
-                <text>当前数量：</text>
-                <view class="carnumText">33辆</view>
-            </view>
-            <view class="carbtn">
-                <button>排队</button>
-                <picker mode="date" value="{{date2}}" start="2015-09-01" end="9999-09-01" bindchange="bindDateChange2">
-                    <view class="picker">
-                     {{date2}}
-                    </view>
-                </picker>
-            </view>
-        </view>
-        <view class="item">
-            <view class="num">3号车道</view>
-            <view class="carnum">
-                <text>当前数量：</text>
-                <view class="carnumText">33辆</view>
-            </view>
-            <view class="carbtn">
-                <button>排队</button>
-                <picker mode="date" value="{{date3}}" start="2015-09-01" end="9999-09-01" bindchange="bindDateChange3">
-                    <view class="picker">
-                     {{date3}}
-                    </view>
-                </picker>
-            </view>
-        </view>
+        </block>
     </view>
-    <view class="vehiclelaneText">
-        <view class="p">一号车道检车排队数量：22辆</view>
-        <view class="p">二号车道检车排队数量：28辆</view>
-        <view class="p">三号车道检车排队数量：25辆</view>
-    </view>
-
-    <view class="vehiclelaneText">
-        <view class="p">所选车道：1号</view>
-        <view class="p">当前号数：18号</view>
-        <view class="p">您前面还有17辆车在排队，请耐心等待</view>
+    <view class="shencheCon paiduiCon">
+        <block wx:for="{{pdarr}}">
+            <view class="item">
+                <view class="item-text">
+                    <view class="text">{{item.des}}</view>
+                    <view class="go">{{item.go}}</view>
+                </view>
+                <view class="img">
+                    <image src="/pages/images/pd.png" mode="aspectFill"></image>
+                </view>
+            </view>
+        </block>
     </view>
 
 
