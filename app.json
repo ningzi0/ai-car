@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/home/home",
     "pages/security/security",
     "pages/VehicleLane/VehicleLane",
     "pages/carinfo2/carinfo2",
