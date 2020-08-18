@@ -1,0 +1,63 @@
+/* pages/carinfo3/carinfo3.wxss */
+.carinfo3Title{
+  margin:5em 0 0;
+}
+.carinfo3Title .h3{
+  font-size: 2em;
+  font-weight: bold;
+}
+.carinfo3{
+  padding: 0 1em;
+}
+
+.carinfo3 .ul{
+  margin: 2em 0;
+}
+.carinfo3 .ul .li{
+  font-size: 0.9em;
+  padding:1em 0.5em;
+  border-bottom: 1px solid #eee;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

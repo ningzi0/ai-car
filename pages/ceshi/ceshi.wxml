@@ -1,0 +1,7 @@
+
+    <block wx:key="item" wx:for="{{data}}">
+      <view data-index='{{index}}' class="order-item" bindtouchstart="drawStart" bindtouchmove="drawMove" bindtouchend="drawEnd" style="right:{{item.right}}rpx">
+          <view class="content">{{item.content}}</view>
+          <view class="remove" bindtap="delItem">删除 </view>
+      </view>
+    </block>
