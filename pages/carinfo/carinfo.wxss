@@ -77,6 +77,23 @@
 }
 
 
+
+.login-content .ul .li text{
+  width: 30%;
+  font-size: 0.95em;
+  display: inline-block;
+  vertical-align: middle;
+}
+.login-content .ul .li input,.login-content .ul .li button{
+  width: 65%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+
+
+
 .login-content .ul .li.phone input{
   width:56%;
   display: inline-block;

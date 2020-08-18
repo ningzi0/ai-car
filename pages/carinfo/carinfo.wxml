@@ -16,6 +16,7 @@
     <view class="content login-content register-content carinfoContent">
         <view class="ul">
             <view class="li" bindtap="toggleDialog">
+                <text>车辆品牌</text>
                 <input type="text" placeholder="车辆品牌型号" placeholder-style="color:#9b9b9b"></input>
             </view>
             <view class="li phone">
@@ -23,13 +24,16 @@
                 <button bindtap="sendCode" disabled="{{smsFlag}}" style='color:{{sendColor}};'>{{sendTime}}</button>
             </view>
             <view class="li">
+                <text>验证码</text>
                 <input bindinput="inputCode" name="account" maxlength="8" placeholder="请输入验证码" ></input>
             </view>
             <view class="li" >
+                <text>行驶证</text>
                 <button type="default" size="mini" bindtap="chooseImage" wx:if="{{images.length < 1}}">车辆行驶证上传</button>
                 <image src="../images/img-ico.png" mode="aspectFill"></image>
             </view>
              <view class="li" >
+                <text>登记大本</text>
                 <button type="default" size="mini" bindtap="chooseImage" wx:if="{{images.length < 1}}">车辆登记大本上传</button>
                 <image src="../images/img-ico.png" mode="aspectFill"></image>
             </view>

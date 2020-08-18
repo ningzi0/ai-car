@@ -1,14 +1,16 @@
 {
   "pages":[
-    "pages/home/home",
-    "pages/security/security",
-    "pages/VehicleLane/VehicleLane",
-    "pages/carinfo2/carinfo2",
     "pages/carinfo/carinfo",
-    "pages/login/login",
-    "pages/payment/payment",
-    "pages/index/index",
+    "pages/carinfo2/carinfo2",
+    "pages/ceshi/ceshi",
+    "pages/carinfo3/carinfo3",
     "pages/inspect/inspect",
+    "pages/payment/payment",
+    "pages/login/login",
+    "pages/VehicleLane/VehicleLane",
+    "pages/security/security",
+    "pages/home/home",
+    "pages/index/index",
     "pages/inspect2/inspect2",
     "pages/register/register",
     "pages/logs/logs"
