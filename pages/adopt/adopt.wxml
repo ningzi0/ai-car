@@ -1,0 +1,47 @@
+<!--pages/adopt/adopt.wxml-->
+<input type="text" class="search" confirm-type="search" placeholder="搜索关键字"></input>
+<view class="adopt">
+    <view class="adoptul">
+        <view class="adoptLi">
+            <view class="adoptliFl">
+                <text>车主：张丰文</text>
+                <text>车牌：贵A·AA666</text>
+            </view>
+            <view class="adoptlFr">
+              <image src="/pages/images/suc.png"></image>
+              <text>手续通过</text>
+            </view>
+        </view>
+
+        <view class="adoptLi">
+            <view class="adoptliFl">
+                <text>车主：张丰文</text>
+                <text>车牌：贵A·AA666</text>
+            </view>
+            <view class="adoptlFr">
+              <image src="/pages/images/suc.png"></image>
+              <text>手续通过</text>
+            </view>
+        </view>
+
+        <view class="adoptLi">
+            <view class="adoptliFl">
+                <text>车主：张丰文</text>
+                <text>车牌：贵A·AA666</text>
+            </view>
+            <view class="adoptlFr">
+              <image src="/pages/images/suc.png"></image>
+              <text>手续通过</text>
+            </view>
+        </view>
+    </view>
+</view>
+
+
+
+
+
+
+
+
+

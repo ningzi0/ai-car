@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/adopt/adopt",
     "pages/carinfo/carinfo",
     "pages/carinfo2/carinfo2",
     "pages/ceshi/ceshi",
