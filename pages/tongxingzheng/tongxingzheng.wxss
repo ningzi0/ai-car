@@ -1,0 +1,108 @@
+.passContent{
+  width: 90%;
+  background: #12315db7;
+  height: 50vh;
+  border-radius: 0.35em;
+  margin: 3em auto;
+  position: relative;
+  overflow: hidden;
+}
+.bgcolor .bg1{
+  width: 15em;
+  height: 15em;
+  background-color: #12315d;
+  border-radius: 50%;
+  position: absolute;
+  top: -20%;
+  right: -20%;
+  z-index: 3;
+}
+.bgcolor .bg2{
+  width: 20em;
+  height: 20em;
+  background-color: #12315dab;
+  border-radius: 50%;
+  position: absolute;
+  top: -32%;
+  right: -20%;
+  z-index: 2;
+}
+.bgcolor .bg3{
+  width: 40em;
+  height: 40em;
+  background-color: #12315d8f;
+  border-radius: 50%;
+  position: absolute;
+  top: -27%;
+  right: -70%;
+  z-index: 1;
+}
+
+.passCon{
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  z-index: 5;
+}
+.passTitle{
+  text-align: center;
+  color: #fff;
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: 0.3em;
+  padding: 1em 0;
+}
+
+.car_License .p{
+  text-align: center;
+  color: #fff;
+  padding: 0.35em 0;
+  font-weight: 100;
+  font-size: 1.2em;
+}
+.date{
+  text-align: center;
+  color: #fff;
+  margin: 2em 0;
+}
+.date .date-span{
+  padding: 0.75em;
+  background-color: #12315d;
+}
+.date .date-span,.date text{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.tips{
+  text-align: center;
+}
+.watermark{
+  position: absolute;
+  z-index: 9;
+  text-align: center;
+}
+.watermark image{
+  width: 54.5em;
+  height: 10em;
+  opacity: 0.1;
+  margin: 2.75em 0.2em;
+  margin-left: 8em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

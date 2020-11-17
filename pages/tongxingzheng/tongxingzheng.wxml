@@ -1,0 +1,33 @@
+<view class="pass">
+    <view class="passContent">
+        <view class="watermark">
+            <image src="/pages/images/logo.png" mode="aspectFill"></image>
+        </view>
+        <view class="bgcolor">
+            <view class="bg1"></view>
+            <view class="bg2"></view>
+            <view class="bg3"></view>
+        </view>
+        <view class="passCon">
+            <view class="passTitle">通行证</view>
+            <view class="car_License">
+                    <view class="p">车牌</view>
+                    <view class="p">贵A-AF555</view>
+            </view>
+            <view class="date">
+                <view class="date-span">11</view>
+                <text>月</text>
+                <view class="date-span">17</view>
+                <text>日</text>
+                <view class="date-span">11</view>
+                <text>：</text>
+                <view class="date-span">54</view>
+            </view>
+        </view>
+    </view>
+
+    <view class="tips">本通行证只适用于智慧车市通行</view>
+</view>
+
+
+

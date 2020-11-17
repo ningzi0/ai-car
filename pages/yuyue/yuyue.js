@@ -1,37 +1,16 @@
-// pages/carinfo2/carinfo2.js
+// pages/yuyue/yuyue.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    showModal: false,
     date: '2020-11-17',
   },
   bindDateChange: function(e) {
     console.log('picker发送选择改变，携带值为', e.detail.value)
     this.setData({
       date: e.detail.value
-    })
-  },
-  showDialogBtn: function() {
-    this.setData({
-      showModal: true
-    })
-  },
-  hideModal: function () {
-    this.setData({
-      showModal: false
-    });
-  },
-  returnPre:function(e){
-    let pages = getCurrentPages();
-    let prevPage = pages[pages.length - 2];
-    prevPage.setData({
-      discount: e.currentTarget.dataset.discount,
-    })
-    wx.navigateBack({
-      delta: 1,
     })
   },
   /**

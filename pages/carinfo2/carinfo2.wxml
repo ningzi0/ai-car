@@ -34,21 +34,44 @@
 
 
     
-
-<navigator url="../payment/payment">
+    <!-- url="../payment/payment" -->
+<!-- <navigator  bindtap="showDialogBtn">
     <view class="car-pay">
         <text>支付过户费</text><text>(￥180)</text>
     </view>
-</navigator>
+</navigator> -->
+
+<view class="car-pay" bindtap="showDialogBtn">
+        <text>支付过户费</text><text>(￥180)</text>
+    </view>
 
 
 
+<!-- 模态弹窗 -->
+<!--弹窗-->
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modal-dialog" wx:if="{{showModal}}">
+  <view class="modal-title">立即预约</view>
+  <view class="modal-content">
+    <view class="yuyue">
+        <view class="ul">
+            <view class="li">
+                <picker mode="date" value="{{date}}" start="2020-11-17" end="2020-11-20" bindchange="bindDateChange">
+                    <view class="picker">
+                        预约时间： {{date}}
+                    </view>
+                </picker>
+            </view>
+            <view class="li tips">
+            tips:预约时间不得超过三天
+            </view>
+        </view>
+        <view class="btn">立即预约</view>
+    </view>
+</view>
 
 
-
-
-
-
+</view>
 
 
 </view>
