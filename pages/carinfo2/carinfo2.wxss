@@ -39,6 +39,10 @@
   padding: 1em 0;
   border-bottom: 1px solid #eee;
 }
+.yuyue .ul .li text,.yuyue .ul .li input{
+  display: inline-block;
+  vertical-align: middle;
+}
 .yuyue .ul .tips{
   font-size: 0.85em;
   color: #999;

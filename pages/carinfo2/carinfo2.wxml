@@ -56,10 +56,8 @@
     <view class="yuyue">
         <view class="ul">
             <view class="li">
-                <picker mode="date" value="{{date}}" start="2020-11-17" end="2020-11-20" bindchange="bindDateChange">
-                    <view class="picker">
-                        预约时间： {{date}}
-                    </view>
+                <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+                   <text>预约时间：</text> <input value='{{time}}' placeholder='选择时间'/>
                 </picker>
             </view>
             <view class="li tips">
