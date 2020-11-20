@@ -13,10 +13,33 @@ Page({
     }
   },
   data: {
+    // x轴方向的偏移
+    x: 0,
+    // 当前x的值
+    currentX: 0,
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
+  },
+  handleMovableChange: function(e) {
+    // this.data.currentX = e.detail.x;
+    this.data.currentX = e.detail.x;
+  },
+ 
+  handleTouchend: function(e) {
+    this.isMove = true;
+    if (this.data.currentX < -46) {
+      this.data.x = -92;
+      this.setData({
+        x: this.data.x
+      });
+    } else {
+      this.data.x = 0;
+      this.setData({
+        x: this.data.x
+      });
+    }
   },
   //事件处理函数
   bindViewTap: function() {

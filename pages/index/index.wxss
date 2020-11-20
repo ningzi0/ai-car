@@ -14,14 +14,14 @@
 .indexTitactive{
   display: flex;
   background: linear-gradient(to right, #eec667 , #f6a74d);
-  margin: 0 2%;
-  padding: 0.75em 0
+  height: 16em;
 }
 .indexTitactive .item{
   flex: 1;
   padding: 5%;
   font-size:0.85em ;
   position: relative;
+  overflow: hidden;
 }
 .indexTitactive .item .em{
   padding: 3%;
@@ -86,3 +86,49 @@
   display: inline-block;
   margin: 0 2%;
 }
+
+
+
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ 
+.main_item {
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  overflow: hidden;
+}
+ 
+movable-area {
+  width: 532rpx;
+  height: 256px;
+  background: #fff;
+}
+ 
+movable-view {
+  width: 716rpx;
+  height: 256px;
+}
+ 
+.main_item_content {
+  box-sizing: border-box;
+  height: 256px;
+  border-radius: 10rpx;
+}
+ 
+.delete_btn {
+  width: 184rpx;
+  height: 256px;
+  background-color: #8FC31F;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: #fff;
+  font-size: 28rpx;
+  text-align: center;
+  line-height: 256px;
+}
+
