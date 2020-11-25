@@ -45,6 +45,10 @@ Page({
    * 页面的初始数据
    */
   data: {
+    items: [
+      {value: '1', name: '社会车辆', checked: 'true'},
+      {value: '1', name: '车商车辆'},
+    ],
     showModal: false,
     time: '2020-11-18 09:23',
     multiArray: [years, months, days, hours, minutes],
