@@ -1,0 +1,60 @@
+<view class="index">
+    <view class="text">
+        <text>已授权</text>
+        <text>手机号：13658896563</text>
+        <text>车牌号：贵A·FL555</text>
+    </view>
+    <input type="text" class="search" confirm-type="search" placeholder="搜索关键字"></input>
+    <view class="indexContent">
+            <view class="main">
+                <view class="main_item">
+                <movable-area>
+                    <movable-view damping="100" out-of-bounds="true" direction="horizontal" x="{{x}}" animation="false" bindchange="handleMovableChange" capture-bind:touchstart="handleTouchestart" capture-bind:touchend="handleTouchend">
+                    <view class="main_item_content ">
+                        
+        <navigator url="../carinfo2/carinfo2">
+                        <view class="indexTitactive">
+                            <view class="item">
+                                <image src="../images/carico.png" mode="aspectFill"></image>
+                                <view class="span">审车状态：待审核</view>
+                                <view class="span">车辆品牌：本田飞度</view>
+                                <view class="span">车辆识别代码：VIN 4JGBB56E39A518226</view>
+                                <view class="span">发动机号后六位：663411</view>
+                                <view class="span">老车主手机号：18778895636</view>
+                                <view class="span">新车主手机号：13655569896</view>
+                                <view class="em">车牌号：贵A·FL186</view>
+                            </view>
+                        </view>
+                        
+        </navigator>
+                    </view>
+                    </movable-view>
+                </movable-area>
+                <view class="delete_btn " data-productIndex="{{index}} " bindtap="handleDeleteProduct ">删除</view>
+                </view>
+            </view>
+
+        <navigator url="../carinfo/carinfo">
+            <view class="indexTitle">
+                +
+            </view>
+        </navigator>
+    </view>
+</view>
+
+
+
+
+
+
+<!-- <view class="footer">
+    <view class="item active">我的审车</view>
+    <view class="item">我的车道</view>
+</view> -->
+
+
+
+
+
+
+

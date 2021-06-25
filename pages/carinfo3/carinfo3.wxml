@@ -1,0 +1,49 @@
+<view class="carinfo3">
+    <view class="carinfo3Title">
+        <view class="h3">车辆信息</view>
+    </view>
+    
+
+    <view class="ul">
+        <view class="li">
+            <text>号牌号码：</text>
+            <text>贵AHL221</text>
+        </view>
+        <view class="li">
+            <text>车辆类型：</text>
+            <text>普通二轮摩托车</text>
+        </view>
+        <view class="li">
+            <text>所 有 人：</text>
+            <text>李宁</text>
+        </view>
+        <view class="li">
+            <text>住 址：</text>
+            <text>安徽省颍上县陈桥镇陈彭村李东52号</text>
+        </view>
+        <view class="li">
+            <text>使用性质：</text>
+            <text>非营运</text>
+        </view>
+        <view class="li">
+            <text>品牌型号：</text>
+            <text>春风牌CF250-A</text>
+        </view>
+        <view class="li">
+            <text>VIN：</text>
+            <text>LCEPDNL55K6062486</text>
+        </view>
+        <view class="li">
+            <text>发动机号码：</text>
+            <text>9C150219</text>
+        </view>
+        <view class="li">
+            <text>注册日期：</text>
+            <text>20190422</text>
+        </view>
+        <view class="li">
+            <text>发证日期：</text>
+            <text>2019-06-21</text>
+        </view>
+    </view>
+</view>

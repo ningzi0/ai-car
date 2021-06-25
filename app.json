@@ -1,0 +1,53 @@
+{
+  "pages":[
+    "pages/security/security",
+    "pages/VehicleLane/VehicleLane",
+    "pages/payment/payment",
+    "pages/inspect/inspect",
+    "pages/carinfo2/carinfo2",
+    "pages/yuyue/yuyue",
+    "pages/tongxingzheng/tongxingzheng",
+    "pages/shouji/shouji",
+    "pages/adopt/adopt",
+    "pages/carinfo/carinfo",
+    "pages/ceshi/ceshi",
+    "pages/carinfo3/carinfo3",
+    "pages/login/login",
+    "pages/home/home",
+    "pages/index/index",
+    "pages/inspect2/inspect2",
+    "pages/register/register",
+    "pages/logs/logs"
+  ],
+  "tabBar": {
+    "custom": true,
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "pages/images/index-ico.png",
+        "selectedIconPath": "pages/images/indexactive-ico.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/inspect/inspect",
+        "iconPath":"pages/images/chedao-ico.png",
+        "selectedIconPath": "pages/images/chedaoactive-ico.png",
+        "text": "车道"
+        
+      }
+    ]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black",
+    "navigationStyle":"custom"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

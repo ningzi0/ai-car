@@ -1,0 +1,138 @@
+<view class="login">
+    <view class="return" bindtap="returnPre">
+      <image src="../images/return.png" mode="aspectFill"></image>
+    </view>
+
+    <view class="bgimg">
+        <image src="../images/bgimg.png" mode="aspectFill"></image>
+    </view>
+
+    <view class="title">
+        <text class="h1">车辆信息</text>
+    </view>
+
+    <view class="content login-content register-content carinfo2-content">
+        <view class="ul">
+            <view class="li">
+                <text>车牌号：</text><text>贵A·TU123</text>
+            </view>
+            <view class="li">
+                <text>车辆型号：</text><text>雷克萨斯 CT 2019款 CT200h精英版</text>
+            </view>
+            <view class="li">
+                <text>车龄：</text><text>3年</text>
+            </view>
+            <view class="li">
+                <text>登记大本：</text><image src="../images/img-ico.png"></image>
+            </view>
+            <view class="li">
+                <text>行驶证：</text><image src="../images/img-ico.png"></image>
+            </view>
+        </view>
+
+        <view class="type">
+            <text class="cartype">车辆类型</text>
+            <radio-group>
+                <label class="weui-cell weui-check__label" wx:for="{{items}}" wx:key="{{item.value}}">
+                <view class="weui-cell__hd">
+                    <radio value="{{item.value}}" checked="true"/>
+                </view>
+                <view class="weui-cell__bd">{{item.name}}</view>
+                </label>
+            </radio-group>
+        </view>
+
+
+    </view>
+
+
+    
+    <!-- url="../payment/payment" -->
+<!-- <navigator  bindtap="showDialogBtn">
+    <view class="car-pay">
+        <text>支付过户费</text><text>(￥180)</text>
+    </view>
+</navigator> -->
+
+<view class="car-pay" bindtap="showDialogBtn">
+        <text>支付过户费</text><text>(￥180)</text>
+    </view>
+
+
+
+<!-- 模态弹窗 -->
+<!--弹窗-->
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modal-dialog" wx:if="{{showModal}}">
+  <view class="modal-title">立即预约</view>
+  <view class="modal-content">
+    <view class="yuyue">
+        <view class="ul">
+            <view class="li">
+                <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+                   <text>预约时间：</text> <input value='{{time}}' placeholder='选择时间'/>
+                </picker>
+            </view>
+            <view class="li tips">
+            tips:预约时间不得超过三天
+            </view>
+        </view>
+        <view class="btn">立即预约</view>
+    </view>
+</view>
+
+
+</view>
+
+
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

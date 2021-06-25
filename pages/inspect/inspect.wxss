@@ -1,0 +1,42 @@
+/* pages/inspect/inspect.wxss */
+page{
+  background: #f9f9f9;
+}
+.inspect{
+  padding: 0;
+}
+.inspect text{
+  display: block;
+  font-size:0.85em ;
+  color: #000;
+  text-align: center;
+}
+
+.inspect .item{
+  padding: 1em 0;
+}
+.inspect .on{
+  background: #f9f9f9;
+}
+.inspect .item:hover{
+  background: #f5f5f5;
+}
+
+.seclet{
+  position: fixed;
+  bottom: 10%;
+  width: 95%;
+  background: linear-gradient(to right, #eec667 , #f6a74d);
+  text-align: center;
+  left:50%;
+  transform: translate(-50%,0%);
+  color: #fff;
+  padding: 1em 0;
+}
+.seclet text{
+  font-size: 0.85em;
+  opacity: 0.5;
+}
+
+
+

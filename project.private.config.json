@@ -1,0 +1,29 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "资料收集",
+          "pathName": "pages/adopt/adopt",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "审车列表",
+          "pathName": "pages/security/security",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

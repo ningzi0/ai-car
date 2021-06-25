@@ -1,0 +1,40 @@
+/* pages/shouji/shouji.wxss */
+.carinfo2-content{
+  padding:3em 1em 0 ;
+}
+.carinfo2-content .ul .li image{
+  width: 1.5em;
+  height: 1.5em;
+  float: right;
+}
+.car-pay{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(to right, #eec667 , #f6a74d);
+  left: 0;
+  text-align: center;
+  color: #fff;
+  padding: 0.85em 0;
+  font-size: 1em;
+}
+
+.type{
+  margin:2em 0;
+}
+.type text{
+  margin-bottom: 1em;
+  display: block;
+}
+.weui-cell__hd,.weui-cell__bd {
+  display: inline-block;
+  vertical-align: middle;
+}
+.weui-check__label{
+  margin-right: 1em;
+}
+
+.submit{
+  background-color: #eec667;
+  color: #fff;
+}

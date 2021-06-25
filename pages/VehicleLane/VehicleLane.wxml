@@ -1,0 +1,62 @@
+<view class="vehiclelane">
+    <view class="shencheCon" style="display:none">
+        <block wx:for="{{arr}}">
+            <view class="item">
+                <view class="item-text">
+                    <view class="h3">{{item.chedao}}</view>
+                    <view class="text">{{item.des}}</view>
+                    <view class="go">{{item.go}}</view>
+                </view>
+                <view class="img">
+                    <image src="/pages/images/tai.png" mode="aspectFill"></image>
+                </view>
+            </view>
+        </block>
+    </view>
+    <view class="shencheCon paiduiCon">
+        <block wx:for="{{pdarr}}">
+            <view class="item">
+                <view class="item-text">
+                    <view class="text">{{item.des}}</view>
+                    <view class="go">{{item.go}}</view>
+                </view>
+                <view class="img">
+                    <image src="/pages/images/pd.png" mode="aspectFill"></image>
+                </view>
+            </view>
+        </block>
+    </view>
+
+
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

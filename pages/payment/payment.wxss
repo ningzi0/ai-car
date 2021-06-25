@@ -1,0 +1,70 @@
+/* pages/payment/payment.wxss */
+page{
+  background-color: #f9f9f9;
+}
+.paymentContent{
+  background-color: #fff;
+  min-height: 10em;
+  margin:1em;
+  padding: 1em;
+}
+.paymentTitle{
+  display: flex;
+  border-bottom: 1px solid #eee;
+  padding: 1em 0;
+}
+.paymentTitle .span{
+  flex: 1;
+  font-size: 1em;
+}
+.paymentTitle .span:nth-child(2){
+  text-align: right;
+  font-weight: bold;
+}
+.paymentText{
+  margin-top: 1em;
+  text-align: justify;
+  line-height: 1.5;
+}
+.paymentText .p{
+  font-size: 0.85em;
+  padding: 0.5em 0;
+  color: #8f8f8f;
+}
+
+.paymentBtn{
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  padding: 1em 0;
+  background: linear-gradient(to right, #eec667 , #f6a74d);
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

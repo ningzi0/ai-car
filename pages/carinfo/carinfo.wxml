@@ -1,0 +1,400 @@
+<view class="login">
+    <view class="return" bindtap="returnPre">
+      <image src="../images/return.png" mode="aspectFill"></image>
+    </view>
+
+    <view class="bgimg">
+        <image src="../images/bgimg.png" mode="aspectFill"></image>
+    </view>
+    <view class="title">
+        <text class="h1">车辆信息</text>
+    </view>
+
+
+
+
+    <view class="content login-content register-content carinfoContent">
+        <view class="ul">
+            <view class="li" bindtap="toggleDialog">
+                <text>车辆品牌</text>
+                <input type="text" placeholder="车辆品牌型号" placeholder-style="color:#9b9b9b"></input>
+            </view>
+            <view class="li phone">
+                <input bindinput="inputTel" maxlength="11" name="account" placeholder="请输入手机号"></input>
+                <button bindtap="sendCode" disabled="{{smsFlag}}" style='color:{{sendColor}};'>{{sendTime}}</button>
+            </view>
+            <view class="li">
+                <text>验证码</text>
+                <input bindinput="inputCode" name="account" maxlength="8" placeholder="请输入验证码" ></input>
+            </view>
+            <view class="li" >
+                <text>行驶证</text>
+                <button type="default" size="mini" bindtap="chooseImage" wx:if="{{images.length < 1}}">车辆行驶证上传</button>
+                <image src="../images/img-ico.png" mode="aspectFill"></image>
+            </view>
+             <view class="li" >
+                <text>登记大本</text>
+                <button type="default" size="mini" bindtap="chooseImage" wx:if="{{images.length < 1}}">车辆登记大本上传</button>
+                <image src="../images/img-ico.png" mode="aspectFill"></image>
+            </view>
+        </view>
+
+
+        <view class="submit clearfix">
+            <button>确定　→</button>
+        </view>
+
+    </view>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</view>
+
+
+
+
+
+
+
+
+
+
+<view class="zan-dialog {{ showDialog ? 'zan-dialog--show' : '' }}">
+  <view class="zan-dialog__mask" bindtap="toggleDialog" />
+  <view class="zan-dialog__container">
+    <view class='choose'>
+    <view class="chooseTit">选择品牌</view>
+    <view class="chooseContent">
+
+        <!-- 字母筛选 -->
+        <view class="Letter">
+            <view class="li">热</view>
+            <view class="li">A</view>
+            <view class="li">B</view>
+            <view class="li">C</view>
+            <view class="li">D</view>
+            <view class="li">E</view>
+            <view class="li">F</view>
+            <view class="li">G</view>
+            <view class="li">H</view>
+            <view class="li">I</view>
+            <view class="li">J</view>
+            <view class="li">K</view>
+            <view class="li">L</view>
+            <view class="li">M</view>
+            <view class="li">N</view>
+            <view class="li">O</view>
+            <view class="li">P</view>
+            <view class="li">Q</view>
+            <view class="li">R</view>
+            <view class="li">S</view>
+            <view class="li">T</view>
+            <view class="li">U</view>
+            <view class="li">V</view>
+            <view class="li">W</view>
+            <view class="li">X</view>
+            <view class="li">Y</view>
+            <view class="li">Z</view>
+        </view>
+
+
+        <view class="hotbrand">
+            <view class="brandtitle">热门品牌</view>
+            <view class="hotbrandCon">
+                <view class="ul">
+                    <view class="li" bindtap="two">
+                        <view class="ico">
+                            <image src="https://p6-dcd.byteimg.com/img/mosaic-legacy/1dd5000048d6334c26b4~tplv-resize:100:0.png"></image>
+                        </view>
+                        <view class="text">奥迪</view>
+                    </view>
+                    <view class="li">
+                        <view class="ico">
+                            <image src="https://p6-dcd.byteimg.com/img/mosaic-legacy/1dd50000190229abeec8~tplv-resize:100:0.png"></image>
+                        </view>
+                        <view class="text">奔驰</view>
+                    </view>
+                    <view class="li">
+                        <view class="ico">
+                            <image src="https://p3-dcd.byteimg.com/img/mosaic-legacy/1dd5000018fc7c108922~tplv-resize:100:0.png"></image>
+                        </view>
+                        <view class="text">本田</view>
+                    </view>
+                    <view class="li">
+                        <view class="ico">
+                            <image src="https://p3-dcd.byteimg.com/img/mosaic-legacy/1dd5000018efd5725196~tplv-resize:100:0.png"></image>
+                        </view>
+                        <view class="text">长城</view>
+                    </view>
+                    <view class="li">
+                        <view class="ico">
+                            <image src="https://p1-dcd.byteimg.com/img/motor-img/343173efb2ab28cda1b0e5a5b49dab8e~tplv-resize:100:0.png"></image>
+                        </view>
+                        <view class="text">大众</view>
+                    </view>
+                    <view class="li">
+                        <view class="ico">
+                            <image src="https://p1-dcd.byteimg.com/img/motor-img/4867710a834bd648ba55797ba5e37f14~tplv-resize:100:0.png"></image>
+                        </view>
+                        <view class="text">宝马</view>
+                    </view>
+                    <view class="li">
+                        <view class="ico">
+                            <image src="https://p1-dcd.byteimg.com/img/motor-img/c8eb9d15ac7e99904711b5ffe5538777~tplv-resize:100:0.png"></image>
+                        </view>
+                        <view class="text">丰田</view>
+                    </view>
+                    <view class="li">
+                        <view class="ico">
+                            <image src="https://p1-dcd.byteimg.com/img/mosaic-legacy/1dd50000190c8e84e016~tplv-resize:100:0.png"></image>
+                        </view>
+                        <view class="text">福特</view>
+                    </view>
+                    <view class="li">
+                        <view class="ico">
+                            <image src="https://p1-dcd.byteimg.com/img/mosaic-legacy/1dd5000019779bf8dfb2~tplv-resize:100:0.png"></image>
+                        </view>
+                        <view class="text">日产</view>
+                    </view>
+                    <view class="li">
+                        <view class="ico">
+                            <image src="https://p9-dcd.byteimg.com/img/mosaic-legacy/1dd50000196a38ee3f43~tplv-resize:100:0.png"></image>
+                        </view>
+                        <view class="text">雪佛兰</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+
+        <view class="allbrand">
+           
+            <!-- 全部品牌 -->
+            <view class="brandContent">
+                <view class="title">A</view>
+                <view class="brandCon">
+                    <view class="ul">
+                        <view class="li">
+                            <view class="img">
+                                <image src="https://p6-dcd.byteimg.com/img/mosaic-legacy/1dd5000048d6334c26b4~tplv-resize:100:0.png"></image>
+                            </view>
+                            <text>奥迪</text>
+                        </view>
+                        <view class="li">
+                            <view class="img">
+                                <image src="https://p1-dcd.byteimg.com/img/mosaic-legacy/1dd5000018f89ff63f66~tplv-resize:100:0.png"></image>
+                            </view>
+                            <text>阿斯顿·马丁</text>
+                        </view>
+                        <view class="li">
+                            <view class="img">
+                                <image src="https://p1-dcd.byteimg.com/img/mosaic-legacy/1dd500003399ce089bef~tplv-resize:100:0.png"></image>
+                            </view>
+                            <text>阿尔法·罗密欧</text>
+                        </view>
+                    </view>
+                </view>
+
+                <view class="title">B</view>
+                <view class="brandCon">
+                    <view class="ul">
+                        <view class="li">
+                            <view class="img">
+                                <image src="https://p6-dcd.byteimg.com/img/mosaic-legacy/1dd50000190229abeec8~tplv-resize:100:0.png"></image>
+                            </view>
+                            <text>奔驰</text>
+                        </view>
+                        <view class="li">
+                            <view class="img">
+                                <image src="https://p1-dcd.byteimg.com/img/motor-img/4867710a834bd648ba55797ba5e37f14~tplv-resize:100:0.png"></image>
+                            </view>
+                            <text>宝马</text>
+                        </view>
+                        <view class="li">
+                            <view class="img">
+                                <image src="https://p1-dcd.byteimg.com/img/mosaic-legacy/1dd5000018fc7c108922~tplv-resize:100:0.png"></image>
+                            </view>
+                            <text>本田</text>
+                        </view>
+                    </view>
+                </view>
+
+                <view class="title">C</view>
+                <view class="brandCon">
+                    <view class="ul">
+                        <view class="li">
+                            <view class="img">
+                                <image src="https://p1-dcd.byteimg.com/img/motor-img/a256cd3dd412661fb6e6e416507f1431~tplv-resize:100:0.png"></image>
+                            </view>
+                            <text>长安</text>
+                        </view>
+                        <view class="li">
+                            <view class="img">
+                                <image src="https://p3-dcd.byteimg.com/img/mosaic-legacy/bef5000000033b7cfb23~tplv-resize:100:0.png"></image>
+                            </view>
+                            <text>长安欧尚</text>
+                        </view>
+                        <view class="li">
+                            <view class="img">
+                                <image src="https://p6-dcd.byteimg.com/img/mosaic-legacy/1dd5000018efd5725196~tplv-resize:100:0.png"></image>
+                            </view>
+                            <text>长城</text>
+                        </view>
+                    </view>
+                </view>
+
+            </view>
+        </view>
+
+    </view>
+
+</view>
+  </view>
+</view>
+
+
+
+<!-- 二级弹出 -->
+<view class="zan-dialog {{ two ? 'zan-dialog--show' : '' }}">
+  <view class="zan-dialog__mask" bindtap="two" />
+  <view class="zan-dialog__container">
+      <view class='choose'>
+        <view class="chooseTit">选择车型</view>
+        <view class="chooseContent">
+            <view class="allbrand">
+              
+                <!-- 全部品牌 -->
+                <view class="brandContent">
+                    <view class="brandCon">
+                        <view class="ul">
+                            <view class="li" bindtap="three">
+                                <text>奥迪A3</text>
+                            </view>
+                            <view class="li">
+                                <text>奥迪A4L</text>
+                            </view>
+                            <view class="li">
+                                <text>奥迪A4(进口)</text>
+                            </view>
+                            <view class="li">
+                                <text>奥迪A5</text>
+                            </view>
+                            <view class="li">
+                                <text>奥迪A6L</text>
+                            </view>
+                            <view class="li">
+                                <text>奥迪A7</text>
+                            </view>
+                            <view class="li">
+                                <text>奥迪A8</text>
+                            </view>
+                        </view>
+                    </view>
+
+                </view>
+            </view>
+
+        </view>
+        </view>
+  </view>
+</view>
+
+
+<!-- 三级选择 -->
+<!-- 二级弹出 -->
+<view class="zan-dialog {{ three ? 'zan-dialog--show' : '' }}">
+  <view class="zan-dialog__mask" bindtap="three" />
+  <view class="zan-dialog__container">
+      <view class='choose'>
+        <view class="chooseTit">选择车型</view>
+        <view class="chooseContent">
+            <view class="allbrand">
+              
+                <!-- 全部品牌 -->
+                <view class="brandContent">
+                    <view class="brandCon">
+                        <view class="ul">
+                            <view class="li">
+                                <text>2020款 Sportback 35 TFSI进取型 国VI</text>
+                            </view>
+                            <view class="li">
+                                <text>2020款 改款 Sportback 35 TFSI进取型 国VI</text>
+                            </view>
+                            <view class="li">
+                                <text>2020款 Sportback 35 TFSI 时尚型 国VI</text>
+                            </view>
+                            <view class="li">
+                                <text>2020款 Sportback 35 TFSI 风尚型 国VI</text>
+                            </view>
+                            <view class="li">
+                                <text>2020款 Sportback 35 TFSI 运动型 国VI</text>
+                            </view>
+                            <view class="li">
+                                <text>2020款 Limousine 35 TFSI 进取型 国VI</text>
+                            </view>
+                            <view class="li">
+                                <text>2020款 改款 Limousine 35 TFSI 进取型 国VI</text>
+                            </view>
+                        </view>
+                    </view>
+
+                </view>
+            </view>
+
+        </view>
+        </view>
+  </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

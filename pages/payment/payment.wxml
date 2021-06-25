@@ -1,0 +1,38 @@
+<view class="payment">
+    <view class="paymentContent">
+        <view class="paymentTitle">
+            <view class="span">网络推广费</view>
+            <view class="span">￥180元</view>
+        </view>
+        <view class="paymentText">
+            <view class="p">费用介绍：网络推广费是指在平台进行的网络推广，网络推广费是指在平台进行的网络推广，</view>
+            <view class="p">支付时间：2020-07-06</view>
+        </view>
+    </view>
+
+
+
+
+
+
+
+    <navigator url="../VehicleLane/VehicleLane">
+        <view class="paymentBtn">确认支付</view>
+    </navigator>
+
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

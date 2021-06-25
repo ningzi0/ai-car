@@ -1,0 +1,72 @@
+.security .item{
+  background-color: #80c269;
+  margin: 2%;
+  position: relative;
+}
+.security .item .itemText{
+  padding: 5%;
+}
+.security .item text{
+    display: block;
+    font-size:0.85em;
+    line-height: 1.75;
+    color: #fff;
+    font-weight: 200;
+    letter-spacing: 0.1em;
+}
+
+
+.security .img{
+  position: absolute;
+  opacity: 0.08;
+  top: 0;
+  right: 0;
+}
+.security .img image{
+  width: 7em;
+  height: 7em;
+}
+
+.btn{
+  display: flex;
+}
+.btn .btnitem{
+  flex: 1;
+  text-align: center;
+}
+
+.btn .btnitem:nth-child(1){
+  background-color: #DD9F54;
+}
+.btn .btnitem:nth-child(2){
+  background-color: #7D9871;
+}
+.btn .btnitem{
+  padding: 3% 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

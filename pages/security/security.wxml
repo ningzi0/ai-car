@@ -1,0 +1,60 @@
+<input type="text" class="search" confirm-type="search" placeholder="搜索车牌号"></input>
+<view class="security">
+
+    <view class="swiper-tab">
+        <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">当前审车列表</view>
+        <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">我的审车列表</view>
+    </view>
+
+
+
+
+    <swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">
+        <swiper-item>
+            <block wx:for="{{arr}}">
+                <view class="item">
+                    <view class="itemText">
+                        <text>车牌号：{{item.carnum}}</text>
+                        <text>手机号：{{item.phonenum}}</text>
+                        <text>发动机号：{{item.fadongjinum}}</text>
+                    </view>
+                    <view class="img">
+                        <image src="{{item.src}}" mode="aspectFill"></image>
+                    </view>
+                    <view class="btn">
+                        <view class="btnitem">
+                            <text>审核完成</text>
+                        </view>
+                        <view class="btnitem">
+                            <text>审核不通过</text>
+                        </view>
+                    </view>
+                </view>
+            </block>
+        </swiper-item>
+
+
+        <swiper-item>
+            <block wx:for="{{arr}}">
+                <view class="item">
+                    <view class="itemText">
+                        <text>车牌号：{{item.carnum}}</text>
+                        <text>手机号：{{item.phonenum}}</text>
+                        <text>发动机号：{{item.fadongjinum}}</text>
+                    </view>
+                    <view class="img">
+                        <image src="{{item.src}}" mode="aspectFill"></image>
+                    </view>
+                </view>
+            </block>
+        </swiper-item>
+
+</swiper>
+</view>
+
+
+
+
+
+
+

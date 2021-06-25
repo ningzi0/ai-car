@@ -1,0 +1,293 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+/*清楚浮动*/
+.clearfix:after {
+  clear: both;
+  height: 0;
+  content: "";
+  line-height: 0;
+  font-size: 0;
+  display: block;
+}
+
+
+/* 登录注册 */
+.login .title .h1{
+  display: block;
+}
+.bgimg{
+  width: 10em;
+  height: 7em;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+.bgimg image{
+  width: 100%;
+  height: 7em;
+}
+
+.login{
+  padding: 0 3em;
+}
+.title .h1{
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 5em;
+}
+.title .span{
+  font-size:0.85em ;
+  color: #9b9b9b;
+  display: block;
+  margin: 1em 0;
+}
+
+.login-content{
+  padding: 5em 0 0;
+}
+.login-content .ul .li{
+  border-bottom: 1px solid #f7f7f7;
+  padding: 1em 0;
+}
+.login-content .ul .li .ico image{
+  width: 2em;
+  height: 2em;
+}
+.login-content .ul .li .ico{
+  display: inline-block;
+  width: 2em;
+  vertical-align: middle;
+}
+.login-content .ul .li input{
+  width: 82%;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0.85em;
+  padding: 0 2%;
+}
+
+.submit button{
+  background: linear-gradient(to right, #eec667 , #f6a74d);
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: 300;
+  float: right;
+  padding: 0.75em 0;
+  border-radius: 10em;
+  margin: 3em 0 0;
+}
+.submit button:active{
+  background: #dfa342;
+}
+
+.no{
+  text-align: center;
+  font-size: 0.85em;
+  color: #9f9f9f;
+  position: fixed;
+  bottom: 2%;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+.no .span{
+  display: inline-block;
+  vertical-align: middle;
+}
+.no navigator{
+  display: inline-block;
+  vertical-align: middle;
+  color: #f6aa4f;
+}
+
+
+
+.return{
+  width: 1.7em;
+  height: 1.7em;
+}
+.return image{
+  width: 1.7em;
+  height: 1.7em;
+  position: fixed;
+  top: 8%;
+  left: 5%;
+}
+
+
+/* 品牌选择 */
+.maskLayer{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 55;
+}
+.choose{
+  background-color: #fff;
+  position: fixed;
+  top:auto;
+  bottom: 0;
+  width: 100%;
+  height: 85vh;
+  border-radius: 0.5em 0.5em 0 0;
+  z-index: 66;
+}
+
+.chooseContent{
+  overflow-y:scroll ;
+  height: 90%
+}
+
+.chooseTit{
+  text-align: center;
+  padding: 0.75em 0;
+  background-color: #76919c20;
+}
+
+.hotbrand{
+  padding: 0 1em;
+}
+
+.brandtitle{
+  font-size:0.9em ;
+  padding: 0.75em 0;
+}
+.hotbrandCon .ul .li{
+  text-align: center;
+  width: 19%;
+  display: inline-block;
+  margin-bottom:1em;
+}
+.hotbrandCon .ul .li .ico image{
+  width: 2.3em;
+  height: 2.3em;
+}
+.hotbrandCon .ul .li .text{
+  font-size: 0.8em;
+  color: rgb(95, 95, 95);
+}
+
+.allbrand .title{
+  background-color: #76919c20;
+  padding: 0.3em 1em;
+  color: #76919c86;
+  font-size:0.8em ;
+}
+
+.brandCon .ul .li{
+  padding: 0.75em 1em;
+  font-size:0.85em ;
+}
+.brandCon .ul .li:hover{
+  background-color: #76919c12;
+}
+.brandCon .ul .li{
+  border-bottom: 1px solid #eee;
+}
+.brandCon .ul .li .img{
+  display: inline-block;
+  vertical-align: middle;
+}
+.brandCon .ul .li text{
+  display: inline-block;
+}
+.brandCon .ul .li .img image{
+  width: 2.3em;
+  height: 2.3em;
+}
+
+.Letter{
+  position: fixed;
+  right: 2%;
+  font-size:0.6em ;
+  top: 50%;
+  transform: translate(0,-50%);
+  text-align: center;
+  width: 2em;
+  color: #76919c
+}
+
+.cias{
+  position: absolute;
+  top: 10%;
+  left: -22%;
+  width: 12em;
+  height: 2em;
+  background-color: rgba(255, 136, 0, 0.671);
+  transform: rotate(-45deg);
+  font-size: 0.65em;
+  color: #fff;
+  line-height: 2em;
+  text-align: center;
+}
+
+
+/*车道 页面*/
+.vehiclelaneCon{
+  min-height: 10em;
+  background-color: #fff;
+  padding: 1em;
+  margin: 1em;
+}
+
+.vehiclelaneCon{
+  display: flex;
+}
+.vehiclelaneCon .item{
+  flex: 1;
+  border-right: 1px solid #eee;
+  text-align: center;
+}
+.vehiclelaneCon .item:last-child{
+  border-right: 0;
+}
+.vehiclelaneCon .item image{
+  width: 4em;
+  height: 4em;
+  margin: 1em 0;
+}
+
+.vehiclelaneText{
+  padding:0 2em;
+  font-size:0.85em;
+  line-height: 1.75; 
+  margin:1.2em 0
+}
+
+.search{
+  background-color: #f3f3f3;
+  font-size: 0.85em;
+  padding: 3%;
+  margin: 2%;
+}
+
+
+
+
+
+/*当前审车列表-我的审车列表*/
+.swiper-tab{
+  display: flex;
+}
+.swiper-tab .swiper-tab-list{
+  flex: 1;
+  text-align: center;
+  font-size: 0.85em ;
+  background: #fafafa;
+  padding: 0.75em 0;
+  margin: 0 0.1em;
+}
+
+
+.on{ color: #80c269;border-bottom: 3rpx solid #80c269;}

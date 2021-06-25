@@ -1,0 +1,16 @@
+<view class="img">
+    <image src="/pages/images/home1.jpg" mode="aspectFill"></image>
+</view>
+<view class="homelist">
+    <text>1、提供审车记录查询</text>
+    <text>2、查看预约场地排队情况</text>
+    <text>3、提供审车当日线上排队</text>
+    <text>4、查看审车状态</text>
+</view>
+<view class="btn">
+    <text>立即审车</text>
+</view>
+
+<view class="p">此功能会获取用户信息，平台承诺不会将用户信息透露给第三方</view>
+
+
