@@ -1,0 +1,125 @@
+/* pages/Driving/Driving.wxss */
+
+.driving{
+  position: fixed;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%,0);
+  width: 90%;
+}
+.drivingItem{
+  font-size: 0.9em;
+  margin: 1em 0;
+  box-shadow: 0 0 1em rgba(0,0,0,0.05);
+}
+.drivingItem .con{
+  padding: 1em;
+  height: 7em;
+  line-height: 1.5;
+  position: relative;
+}
+.drivingItem .con .ico{
+  display: inline-block;
+  vertical-align: middle;
+  width: 30%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(#ffe0ac, #dfac4f);
+}
+.drivingItem .con .text{
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 7em;
+  margin-top: 1em;
+}
+.drivingItem .con .text .h3{
+  padding: 0.75em 0;
+}
+.drivingItem .con .text .p{
+  font-size: 0.85em;
+  color: #999;
+}
+.drivingItem .con .ico image{
+  width: 1.5em;
+  height: 1.5em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.driving .title{
+  text-align: center;
+  padding: 0.75em 0;
+  font-size: 0.9em;
+  border-bottom: 1px solid #eee;
+}
+.drivingItem .con:active{
+  background: #eee;
+}
+
+
+
+
+
+
+
+/**/
+.option{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.25);
+  
+}
+.option{
+  display: none;
+}
+.zan-dialog--show{
+  display: block
+}
+.zan-dialog--show .option__container{
+  position: absolute;
+  top: 50%;
+  padding: 1em;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 70%;
+  text-align: center;
+  box-shadow: 0 0 1em rgba(0,0,0,0.25);
+  border-radius: 0.5em;
+  background: #f9f9f9;
+}
+.option-con{
+  background: #fff;
+}
+
+.zan-dialog--show .option__container .option-list {
+  padding: 1em 0;
+  display: block;
+  font-size: 0.9em;
+  border-bottom: 1px solid #eee;
+}
+.zan-dialog--show .option__container .option-list:last-child{
+  border: 0;
+}
+.zan-dialog--show .option__container .option-list:active{
+  background: #eee;
+}
+.optitle{
+  padding: 1em 0;
+  background: #f9f9f9;
+  font-size: 0.9em;
+}
+.option-con button{
+  width: 100% !important;
+  background: #12315d;
+  margin: 0.35em 0;
+  color: #fff;
+}
+

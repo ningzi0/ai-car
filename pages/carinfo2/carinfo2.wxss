@@ -133,3 +133,48 @@ radio .wx-radio-input.wx-radio-input-checked::before{
   transform:translate(-50%, -50%) scale(1);
   -webkit-transform:translate(-50%, -50%) scale(1);
 }
+
+
+
+
+
+
+/*底部双按钮  样式开始*/
+.btnflex{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  left: 0;
+}
+.btnflex .flexItem{
+  flex: 1;
+  text-align: center;
+  background: #eabe6a;
+  font-size: 0.9em;
+}
+.btnflex .flexItem:last-child{
+  background: #fad189;
+}
+
+.btnflex .flexItem navigator{
+  padding: 1em 0;
+}
+
+
+/* 底部双按钮  样式结束 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

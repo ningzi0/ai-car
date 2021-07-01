@@ -5,6 +5,10 @@ Page({
    * 页面的初始数据
    */
   data: {
+    array: ['非营运', '公路客运', '公交客运', '出租客运', '旅游客运', '租赁', '教练', '接送幼儿', '接送小学生', '接送中小学生', '接送初中生', '危险货物运输', '货运', '消防', '救护', '工程救险', '警用', '出租营转非', '营转非'],
+    
+    index: 0,
+    showDialog2: false,
     images: [],
     tel: "",
     code: "",
@@ -13,13 +17,29 @@ Page({
     sendColor: '#363636',
     snsMsgWait: 60
   },
-
+  bindPickerChange: function(e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      index: e.detail.value
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+
+    this.setData({
+      showDialog2: !this.data.showDialog2
+    });
+
   },
+  toggleDialog2() {
+    this.setData({
+      showDialog2: !this.data.showDialog2
+    });
+
+  },
+  
   
   returnPre:function(e){
     let pages = getCurrentPages();

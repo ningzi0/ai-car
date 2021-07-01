@@ -33,12 +33,45 @@
                 <view class="delete_btn " data-productIndex="{{index}} " bindtap="handleDeleteProduct ">删除</view>
                 </view>
             </view>
+            
+
+            <!-- <view class="indexTitle" bindtap="toggleDialog"> + </view>
+            <view class="zan-dialog {{ showDialog ? 'zan-dialog--show' : '' }}"  bindtap="toggleDialog">
+              
+                <view class="zan-dialog__container">
+                   
+                    <view class="zan-dialog-list">
+                        <navigator>注册登记</navigator>
+                    </view>
+                    <view class="zan-dialog-list">
+                        <navigator>转移登记</navigator>
+                    </view>
+                    <view class="zan-dialog-list">
+                        <navigator>车辆转入</navigator>
+                    </view>
+                    <view class="zan-dialog-list">
+                        <navigator>车辆转出</navigator>
+                    </view>
+
+                </view>
+            </view> -->
+
+
+           
+
 
         <navigator url="../carinfo/carinfo">
             <view class="indexTitle">
                 +
             </view>
-        </navigator>
+        </navigator> 
+
+
+
+
+
+
+        
     </view>
 </view>
 

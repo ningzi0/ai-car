@@ -13,7 +13,7 @@
 
 
 
-    <view class="content login-content register-content carinfoContent">
+    <!-- <view class="content login-content register-content carinfoContent">
         <view class="ul">
             <view class="li" bindtap="toggleDialog">
                 <text>车辆品牌</text>
@@ -40,13 +40,124 @@
         </view>
 
 
+
+
         <view class="submit clearfix">
             <button>确定　→</button>
         </view>
 
+    </view> -->
+
+
+
+
+
+<view class="newcar">
+    <view class="listItem">
+        <view class="listItemView">
+            <text>保险</text>
+            <button>上传图片</button>
+        </view>
+        <view class="listItemTips">请上传保险照片，自动识别保险信息，请仔细核对</view>
     </view>
+    <view class="listItem">
+        <view class="listItemView">
+            <text>交强险</text>
+            <button>上传图片</button>
+        </view>
+        <view class="listItemTips">请上传交强险照片，自动识别交强险信息，请仔细核对</view>
+    </view>
+    <view class="listItem">
+        <view class="listItemView">
+            <text>身份证</text>
+            <button>上传图片</button>
+        </view>
+        <view class="listItemTips">请上传身份证照片，自动识别身份证信息，请仔细核对</view>
+    </view>
+    <view class="listItem">
+        <view class="listItemView">
+            <text>营业执照</text>
+            <button>上传图片</button>
+        </view>
+        <view class="listItemTips">请上传营业执照照片，自动识别营业执照信息，请仔细核对</view>
+    </view>
+    <view class="listItem">
+        <view class="listItemView">
+            <text>购置税</text>
+            <button>上传图片</button>
+        </view>
+        <view class="listItemTips">请上传购置税照片，自动识别购置税信息，请仔细核对</view>
+    </view>
+    <view class="listItem">
+        <view class="listItemView">
+            <text>合格证</text>
+            <button>上传图片</button>
+        </view>
+        <view class="listItemTips">请上传合格证照片，自动识别合格证信息，请仔细核对</view>
+    </view>
+    <view class="listItem">
+        <view class="listItemView">
+            <text>关单</text>
+            <button>上传图片</button>
+        </view>
+        <view class="listItemTips">请上传关单照片，自动识别关单信息，请仔细核对</view>
+    </view>
+    <view class="listItem">
+        <view class="listItemView">
+            <text>发票</text>
+            <button>上传图片</button>
+        </view>
+        <view class="listItemTips">请上传发票照片，自动识别发票信息，请仔细核对</view>
+    </view>
+    <view class="input_salesman out">
+        <text>转出至</text>
+        <input type="text"  placeholder="(自治区、直辖市)"/> 省 
+        <input type="text"  placeholder="(地、州)"/>市 车管所
+    </view>
+</view>
 
 
+<picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker nature">
+        请选择使用性质：{{array[index]}}
+    </view>
+  </picker>
+
+<view class="salesman">
+    <navigator url="/pages/salesman/salesman">
+        <text>选择业务员</text>
+    </navigator>
+    
+</view>
+
+<view class="submit">提交</view>
+
+
+
+
+
+
+
+
+
+
+
+    <view class="option {{ showDialog2 ? 'zan-dialog--show' : '' }}"  bindtap="toggleDialog2">
+        
+        <view class="option__container" >
+            <view class="optitle">
+                <text>车辆类型</text>
+            </view>
+            <view class="option-con">
+                <view class="option-list">注册登记</view>
+                <view class="option-list">转移登记</view>
+                <view class="option-list">车辆转入</view>
+                <view class="option-list">车辆转出</view>
+            </view>
+
+        </view>
+        
+    </view>
     
 
 

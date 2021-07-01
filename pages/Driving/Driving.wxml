@@ -1,0 +1,100 @@
+<!--pages/Driving/Driving.wxml-->
+<view class="driving">
+    <view class="title">请选择驾驶方式</view>
+    <view class="drivingItem"  bindtap="toggleDialog">
+        <view class="'con'">
+          <view class="ico">
+            <image src="/pages/images/zijia.png" mode="aspectFill"></image>
+          </view>
+          <view class="text">
+            <view class="h3">自行驾车</view>
+            <view class="p">tips:自行驾驶车辆到审车处</view>
+          </view>
+      </view>
+    </view>
+    <view class="drivingItem" bindtap="toggleDialog2">
+        <view class="'con'">
+          <view class="ico">
+            <image src="/pages/images/daijia.png" mode="aspectFill"></image>
+          </view>
+          <view class="text">
+            <view class="h3">预约代驾</view>
+            <view class="p">tips:预约代驾将车辆驾驶至审车处</view>
+          </view>
+        </view>
+    </view>
+</view>
+
+
+
+
+
+<!-- 自行驾车弹出框 开始 -->
+<view class="option {{ showDialog ? 'zan-dialog--show' : '' }}">
+        
+        <view class="option__container"  >
+            <view class="optitle">
+                <text>请选择查验时间</text>
+            </view>
+            <view class="option-con">
+                <view class="option-list">立即查验</view>
+                <view class="option-list">
+                  <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+                    <view class="picker">
+                      预约时间：{{multiArray[0][multiIndex[0]]}}{{multiArray[1][multiIndex[1]]}}
+                    </view>
+                  </picker>
+                </view>
+                <form action=""  bindtap="toggleDialog">
+                  <button>提交</button>
+                </form>
+            </view>
+
+        </view> 
+    </view>
+
+<!-- 自行驾车弹出框 结束 -->
+
+
+
+
+<!-- 预约代驾弹出框 开始 -->
+<view class="option {{ showDialog2 ? 'zan-dialog--show' : '' }}">
+        
+        <view class="option__container"  >
+            <view class="optitle">
+                <text>请选择查验时间</text>
+            </view>
+            <view class="option-con">
+                <view class="option-list">
+                  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                    <view class="picker">
+                      预约代驾人：{{array[index]}}
+                    </view>
+                  </picker>
+                </view>
+                <view class="option-list">
+                  <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+                    <view class="picker">
+                      预约时间：{{multiArray[0][multiIndex[0]]}}{{multiArray[1][multiIndex[1]]}}
+                    </view>
+                  </picker>
+                </view>
+                <form action=""  bindtap="toggleDialog2">
+                  <button>提交</button>
+                </form>
+            </view>
+
+        </view> 
+    </view>
+
+<!-- 预约代驾弹出框 结束 -->
+
+
+
+
+
+
+
+
+

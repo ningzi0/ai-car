@@ -112,5 +112,150 @@
 
 
 
+/* 注册登记 转移登记 车辆转入 车辆转出 样式开始*/
+.option{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.25);
+  
+}
+.option{
+  display: none;
+}
+.zan-dialog--show{
+  display: block
+}
+.zan-dialog--show .option__container{
+  position: absolute;
+  top: 50%;
+  padding: 1em;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 70%;
+  text-align: center;
+  box-shadow: 0 0 1em rgba(0,0,0,0.25);
+  border-radius: 0.5em;
+  background: #f9f9f9;
+}
+.option-con{
+  background: #fff;
+}
+
+.zan-dialog--show .option__container .option-list {
+  padding: 1em 0;
+  display: block;
+  font-size: 0.9em;
+  border-bottom: 1px solid #eee;
+}
+.zan-dialog--show .option__container .option-list:last-child{
+  border: 0;
+}
+.zan-dialog--show .option__container .option-list:active{
+  background: #eee;
+}
+.optitle{
+  padding: 1em 0;
+  background: #f9f9f9;
+  font-size: 0.9em;
+}
+
+
+/* 注册登记 转移登记 车辆转入 车辆转出 样式结束*/
+
+/*新车信息上传 样式开始*/
+.login{
+  padding: 0;
+}
+.title .h1{
+  padding: 0 1em;
+}
+.newcar{
+  position: relative;
+  z-index: 99;
+  background: #fafafa;
+  padding: 1em 3em;
+}
+.newcar .listItem{
+  padding:0.5em 0;
+  border-bottom: 1px solid #eee;
+}
+.newcar text{
+  display: inline-block;
+  vertical-align: middle;
+  width: 62%;
+  font-size: 0.9em;
+}
+.newcar .listItem button{
+  width: 100px !important;
+  vertical-align: middle;
+  font-size: 0.9em;
+  padding: 0.2em 0;
+  font-weight: 500;
+  display: inline-block;
+  margin: 0;
+  background: #e9bd6a;
+  color: #fff;
+}
+.listItemTips{
+  padding: 0.5em 0;
+  font-size: 0.8em;
+  background: #fafafa;
+  margin: 0.5em 0;
+  color: #999;
+  line-height: 1.5;
+}
+.title .h1{
+  margin-top: 3em;
+  margin-bottom: 0.5em;
+}
+.return image{
+  z-index: 112;
+}
+.input_salesman{
+  padding: 0.5em 1em;
+  font-size: 0.8em;
+  display: flex;align-items:center;
+}
+.input_salesman text{
+  flex: 1;
+}
+.input_salesman input{
+  display: inline-block;
+  border: 1px solid #eee;
+  flex: 2;
+  padding: 0.35em;
+}
+.submit{
+  padding: 0.75em;
+  font-size: 0.9em;
+  text-align: center;
+  background: #e9bd6a;
+  color: #fff;
+  margin-top: 0.75em;
+}
+.out{
+  padding: 0.5em 0;
+}
+.salesman,.nature{
+  text-align: center;
+  background: #eee;
+  font-size: 0.85em;
+  margin: 0 2em;
+}
+.nature{
+  padding: 0.75em 0;
+  margin: 0.35em 2em;
+}
+.salesman navigator{
+  padding: 0.75em 0;
+}
+
+
+/*新车信息上传 样式结束*/
 
 

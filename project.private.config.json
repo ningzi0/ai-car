@@ -21,6 +21,43 @@
         {
           "name": "审车列表",
           "pathName": "pages/security/security",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "承诺书",
+          "pathName": "pages/commitment/commitment",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": " 车辆信息",
+          "pathName": "pages/carinfo/carinfo",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "选择业务员",
+          "pathName": "pages/salesman/salesman",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "车辆信息2",
+          "pathName": "pages/carinfo2/carinfo2",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "代驾",
+          "pathName": "pages/Driving/Driving",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "测试",
+          "pathName": "pages/ceshi/ceshi",
+          "query": "",
           "scene": null
         }
       ]

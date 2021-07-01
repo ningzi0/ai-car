@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/index/index",
     "pages/security/security",
     "pages/VehicleLane/VehicleLane",
     "pages/payment/payment",
@@ -14,9 +15,11 @@
     "pages/carinfo3/carinfo3",
     "pages/login/login",
     "pages/home/home",
-    "pages/index/index",
     "pages/inspect2/inspect2",
     "pages/register/register",
+    "pages/commitment/commitment",
+    "pages/salesman/salesman",
+    "pages/Driving/Driving",
     "pages/logs/logs"
   ],
   "tabBar": {

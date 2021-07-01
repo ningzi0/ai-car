@@ -1,0 +1,61 @@
+<view class="search">
+  <input class="salesmanInput" type="text" placeholder="请输入业务员的姓名/联系方式"/>
+  <image class="searchico" src="/pages/images/search.png"></image>
+</view>
+<view class="salesmanList">
+    <view class="text">
+      <text>张丰文 15185070538</text>
+      <image src="/pages/images/right.png"></image>
+    </view>
+    <view class="text">
+      <text>张丰才 15185070538</text>
+      <image src="/pages/images/right.png"></image>
+    </view>
+    <view class="text">
+      <text>张丰毅 15185070538</text>
+      <image src="/pages/images/right.png"></image>
+    </view>
+    <view class="text">
+      <text>张丰力 15185070538</text>
+      <image src="/pages/images/right.png"></image>
+    </view>
+    <view class="text">
+      <text>张丰学 15185070538</text>
+      <image src="/pages/images/right.png"></image>
+    </view>
+    <view class="text">
+      <text>张丰宁 15185070538</text>
+      <image src="/pages/images/right.png"></image>
+    </view>
+    <view class="text">
+      <text>张丰肖 15185070538</text>
+      <image src="/pages/images/right.png"></image>
+    </view>
+    <view class="text">
+      <text>张丰吉 15185070538</text>
+      <image src="/pages/images/right.png"></image>
+    </view>
+    <view class="text">
+      <text>张丰先 15185070538</text>
+      <image src="/pages/images/right.png"></image>
+    </view>
+    <view class="text">
+      <text>张丰先 15185070538</text>
+      <image src="/pages/images/right.png"></image>
+    </view>
+    <view class="text">
+      <text>张丰羡 15185070538</text>
+      <image src="/pages/images/right.png"></image>
+    </view>
+
+</view>
+
+
+
+ 
+
+
+
+
+
+
