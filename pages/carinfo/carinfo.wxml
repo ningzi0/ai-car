@@ -7,8 +7,12 @@
         <image src="../images/bgimg.png" mode="aspectFill"></image>
     </view>
     <view class="title">
-        <text class="h1">车辆信息</text>
-        <view class="h3">注册登记</view>
+        <text class="h1">车辆信息 </text>
+        <view class="reutn2" bindtap="toggleDialog2">
+            <image src="/pages/images/return2.png" mode="aspectFill"></image>
+            <text>重选事项</text>
+        </view>
+        <!-- <view class="h3">注册登记</view> -->
     </view>
 
 

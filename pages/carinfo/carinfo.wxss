@@ -266,3 +266,35 @@
 /*新车信息上传 样式结束*/
 
 
+/*重新选择事项 样式开始*/
+.title{
+  position: relative;
+}
+.reutn2{
+  background: #e9bd6a;
+  position: absolute;
+  top: 50%;
+  transform: translate(0,-50%);
+  left: 50%;
+  font-size: 0.8em;
+  color: #fff;
+  padding: 0.2em 0.5em;
+  border-radius: 1em;
+}
+.reutn2:active{
+  opacity: 0.3;
+}
+.reutn2 image{
+  width: 1.2em;
+  height: 1.2em;
+  display: inline-block;
+  vertical-align: middle;
+}
+.reutn2 text{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+
+/* 重新选择事项 样式结合 */
