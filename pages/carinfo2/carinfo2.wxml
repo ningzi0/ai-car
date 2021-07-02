@@ -24,6 +24,9 @@
             </view>
             <view class="li">
                 <text>登记大本：</text><image src="../images/img-ico.png"></image>
+                <view class="img">
+                    <image src="{{imgList[0]}}"  bindtap="preview" data-src="{{imgList[0]}}" mode="aspectFill"></image>
+                </view>
             </view>
             <view class="li">
                 <text>行驶证：</text><image src="../images/img-ico.png"></image>

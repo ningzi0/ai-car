@@ -45,6 +45,11 @@ Page({
    * 页面的初始数据
    */
   data: {
+    imgList: [
+      "/pages/images/djdb.jpg",
+    ],
+
+
     items: [
       {value: '1', name: '社会车辆', checked: 'true'},
       {value: '1', name: '车商车辆'},
@@ -55,6 +60,17 @@ Page({
     multiIndex: [0, 9, 16, 10, 17],
     choose_year: '',
   },
+
+ //预览图片，放大预览
+ preview(event) {
+  console.log(event.currentTarget.dataset.src)
+  let currentUrl = event.currentTarget.dataset.src
+  wx.previewImage({
+    current: currentUrl, // 当前显示图片的http链接
+    urls: this.data.imgList // 需要预览的图片http链接列表
+  })
+},
+
   bindDateChange: function(e) {
     console.log('picker发送选择改变，携带值为', e.detail.value)
     this.setData({
@@ -176,6 +192,8 @@ bindMultiPickerColumnChange: function(e) {
   data.multiIndex[e.detail.column] = e.detail.value;
   this.setData(data);
 },
+
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
