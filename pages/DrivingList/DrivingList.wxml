@@ -8,72 +8,91 @@
 <swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px"
   bindchange="bindChange">
   <swiper-item>
-    <view class="adopt">
-      <view class="adoptul">
-        <view class="adoptLi">
-          <view class="con">
-            <view class="adoptliFl">
-              <text>车牌：贵AHD933</text>
-              <text>电话：15185070538</text>
+    <view class="drivingItem">
+      <view class="drivinglist">
+          <view class="drivingInfo">
+              <view class="d_info_item">
+                <view class="spot "></view>
+                <view class="drivingTitle flex2">车牌：</view>
+                <view class="drivingTitle">贵ALW933</view>
+              </view>
+              <view class="d_info_item">
+                <view class="spot green"></view>
+                <view class="drivingTitle flex2">电话：</view>
+                <view class="drivingTitle">18656456966</view>
+              </view>
+          </view>
+          <view class="dial">
+            <view class="dialbgcolor" catchtap='freeTell'>
+              <image src="/pages/images/dial.png" mode="aspectFill"></image>
             </view>
           </view>
           <view class="drivingBtn">
-            <button>拨号</button>
             <button>接单</button>
-            <button>取消</button>
             <button>完成</button>
-          </view>
-        </view>
-        <view class="adoptLi">
-          <view class="con">
-            <view class="adoptliFl">
-              <text>车牌：贵AHD933</text>
-              <text>电话：15185070538</text>
-            </view>
-          </view>
-          <view class="drivingBtn">
-            <button>拨号</button>
-            <button>接单</button>
             <button>取消</button>
-            <button>完成</button>
           </view>
         </view>
       </view>
-    </view>
 
+
+      <view class="drivingItem">
+      <view class="drivinglist">
+          <view class="drivingInfo">
+              <view class="d_info_item">
+                <view class="spot "></view>
+                <view class="drivingTitle flex2">车牌：</view>
+                <view class="drivingTitle">贵ALW933</view>
+              </view>
+              <view class="d_info_item">
+                <view class="spot green"></view>
+                <view class="drivingTitle flex2">电话：</view>
+                <view class="drivingTitle">18656456966</view>
+              </view>
+          </view>
+          <view class="dial">
+            <view class="dialbgcolor" catchtap='freeTell'>
+              <image src="/pages/images/dial.png" mode="aspectFill"></image>
+            </view>
+          </view>
+          <view class="drivingBtn">
+            <button>接单</button>
+            <button>完成</button>
+            <button>取消</button>
+          </view>
+        </view>
+      </view>
   </swiper-item>
 
 
 
   <swiper-item>
-    <view class="adopt">
-      <view class="adoptul">
-        <view class="adoptLi">
-          <view class="con">
-            <view class="adoptliFl">
-              <text>车牌：贵AHD933</text>
-              <text>电话：15185070538</text>
+    <view class="drivingItem">
+      <view class="drivinglist">
+          <view class="drivingInfo">
+              <view class="d_info_item">
+                <view class="spot "></view>
+                <view class="drivingTitle flex2">车牌：</view>
+                <view class="drivingTitle">贵ALW933</view>
+              </view>
+              <view class="d_info_item">
+                <view class="spot green"></view>
+                <view class="drivingTitle flex2">电话：</view>
+                <view class="drivingTitle">18656456966</view>
+              </view>
+          </view>
+          <view class="dial">
+            <view class="dialbgcolor" catchtap='freeTell'>
+              <image src="/pages/images/dial.png" mode="aspectFill"></image>
             </view>
           </view>
-          <view class="drivingBtn">
-            <button>拨号</button>
-            <button>接单进行中</button>
-          </view>
-        </view>
-        <view class="adoptLi">
-          <view class="con">
-            <view class="adoptliFl">
-              <text>车牌：贵AHD933</text>
-              <text>电话：15185070538</text>
-            </view>
-          </view>
-          <view class="drivingBtn">
-            <button>拨号</button>
-            <button>已完成</button>
-          </view>
+          <!-- <view class="drivingBtn">
+            <button>接单</button>
+            <button>完成</button>
+            <button>取消</button>
+          </view> -->
         </view>
       </view>
-    </view>
 
   </swiper-item>
 

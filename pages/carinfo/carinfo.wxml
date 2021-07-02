@@ -8,6 +8,7 @@
     </view>
     <view class="title">
         <text class="h1">车辆信息</text>
+        <view class="h3">注册登记</view>
     </view>
 
 

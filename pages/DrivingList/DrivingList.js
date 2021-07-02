@@ -51,11 +51,8 @@ bindChange: function( e ) {
 
 },
 freeTell: function(){
-
   wx.makePhoneCall({
-
     phoneNumber: '15185070538',
-
   })
 
 },

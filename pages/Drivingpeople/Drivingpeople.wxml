@@ -1,0 +1,74 @@
+<view class="drivingpeople">
+  <view class="drivingItem">
+      <view class="drivinglist">
+          <view class="drivingInfo">
+              <view class="d_info_item">
+                <view class="spot "></view>
+                <view class="drivingTitle flex2">姓名：</view>
+                <view class="drivingTitle">赵日天</view>
+              </view>
+              <view class="d_info_item">
+                <view class="spot green"></view>
+                <view class="drivingTitle flex2">电话：</view>
+                <view class="drivingTitle">18656456966</view>
+              </view>
+          </view>
+          <view class="dial">
+            <view class="dialbgcolor" catchtap='freeTell'>
+              <image src="/pages/images/dial.png" mode="aspectFill"></image>
+            </view>
+          </view>
+          <view class="state color1">忙碌</view>
+        </view>
+      </view>
+
+      <view class="drivingItem">
+      <view class="drivinglist">
+          <view class="drivingInfo">
+              <view class="d_info_item">
+                <view class="spot "></view>
+                <view class="drivingTitle flex2">姓名：</view>
+                <view class="drivingTitle">王尼玛</view>
+              </view>
+              <view class="d_info_item">
+                <view class="spot green"></view>
+                <view class="drivingTitle flex2">电话：</view>
+                <view class="drivingTitle">18656456966</view>
+              </view>
+          </view>
+          <view class="dial">
+            <view class="dialbgcolor" catchtap='freeTell'>
+              <image src="/pages/images/dial.png" mode="aspectFill"></image>
+            </view>
+          </view>
+          <view class="state color2">空闲</view>
+        </view>
+      </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -65,6 +65,12 @@
           "pathName": "pages/DrivingList/DrivingList",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "请选择代驾人",
+          "pathName": "pages/Drivingpeople/Drivingpeople",
+          "query": "",
+          "scene": null
         }
       ]
     }

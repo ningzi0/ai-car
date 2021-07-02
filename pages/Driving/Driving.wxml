@@ -67,11 +67,7 @@
             </view>
             <view class="option-con">
                 <view class="option-list">
-                  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
-                    <view class="picker">
-                      预约代驾人：{{array[index]}}
-                    </view>
-                  </picker>
+                  <navigator url="/pages/Drivingpeople/Drivingpeople">预约代驾人</navigator>
                 </view>
                 <view class="option-list">
                   <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">

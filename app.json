@@ -21,6 +21,7 @@
     "pages/salesman/salesman",
     "pages/Driving/Driving",
     "pages/DrivingList/DrivingList",
+    "pages/Drivingpeople/Drivingpeople",
     "pages/logs/logs"
   ],
   "tabBar": {
@@ -46,11 +47,12 @@
     ]
   },
   "window":{
-    "backgroundTextStyle":"light",
+    "backgroundTextStyle":"dark",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle":"black",
-    "navigationStyle":"custom"
+    "navigationStyle":"custom",
+    "enablePullDownRefresh":true
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

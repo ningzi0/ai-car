@@ -113,6 +113,13 @@
 
 
 /* 注册登记 转移登记 车辆转入 车辆转出 样式开始*/
+.title .h3{
+  padding: 1em;
+  text-align: center;
+  font-size: 0.9em;
+  background: rgb(247, 247, 247);
+}
+
 .option{
   position: fixed;
   top: 50%;

@@ -99,7 +99,7 @@
   background: #fff;
 }
 
-.zan-dialog--show .option__container .option-list {
+.zan-dialog--show .option__container .option-list picker, .zan-dialog--show .option__container .option-list navigator {
   padding: 1em 0;
   display: block;
   font-size: 0.9em;
