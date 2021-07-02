@@ -1,0 +1,73 @@
+/* pages/adopt/adopt.wxss */
+.adoptLi{
+  font-size: 0.85em;
+  background: rgb(12, 188, 219);
+  overflow: hidden;
+  margin: 0.5em 0;
+}
+.adoptLi .adoptliFl{
+  display: inline-block;
+  width:100%;
+  vertical-align: middle;
+  background: #fafafa;
+  padding: 1em 1.5em;
+  box-sizing: border-box;
+  color: #000;
+  box-shadow: 0 0 1em rgba(0,0,0,0.15);
+}
+.adoptLi .adoptliFl text{
+  margin-right: 0.75em;
+  display: block;
+  padding: 0.5em 0;
+}
+.adoptLi .adoptlFr{
+  display: inline-block;
+  width: 20%;
+  vertical-align: middle;
+  text-align: center;
+  box-sizing: border-box;
+  color: #fff;
+  padding: 1.73em 0;
+}
+.adoptLi .adoptlFr:active{
+  opacity: 0.8;
+}
+.adoptlFr image{
+  width: 1.5em;
+  height: 1.5em;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.5em;
+}
+.adoptlFr text{
+  display: inline-block;
+  vertical-align: middle;
+}
+.drivingBtn{
+  display: flex;
+}
+.drivingBtn button{
+  font-size: 0.95em;
+  font-weight: 500;
+  border-radius:0 ;
+  color: #fff;
+  flex: 1;
+}
+.drivingBtn button:active{
+  opacity: 0.5;
+}
+.drivingBtn button:nth-child(1){
+  background: rgb(214, 70, 3);
+}
+.drivingBtn button:nth-child(2){
+  background: rgb(29, 91, 148);
+}
+.drivingBtn button:nth-child(3){
+  background: rgb(184, 184, 184);
+}
+.drivingBtn button:nth-child(4){
+  background: rgb(9, 146, 16);
+}
+
+
+

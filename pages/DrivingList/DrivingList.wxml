@@ -1,0 +1,80 @@
+<view class="swiper-tab">
+  <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">代驾列表</view>
+  <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">我的接单</view>
+</view>
+
+
+
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px"
+  bindchange="bindChange">
+  <swiper-item>
+    <view class="adopt">
+      <view class="adoptul">
+        <view class="adoptLi">
+          <view class="con">
+            <view class="adoptliFl">
+              <text>车牌：贵AHD933</text>
+              <text>电话：15185070538</text>
+            </view>
+          </view>
+          <view class="drivingBtn">
+            <button>拨号</button>
+            <button>接单</button>
+            <button>取消</button>
+            <button>完成</button>
+          </view>
+        </view>
+        <view class="adoptLi">
+          <view class="con">
+            <view class="adoptliFl">
+              <text>车牌：贵AHD933</text>
+              <text>电话：15185070538</text>
+            </view>
+          </view>
+          <view class="drivingBtn">
+            <button>拨号</button>
+            <button>接单</button>
+            <button>取消</button>
+            <button>完成</button>
+          </view>
+        </view>
+      </view>
+    </view>
+
+  </swiper-item>
+
+
+
+  <swiper-item>
+    <view class="adopt">
+      <view class="adoptul">
+        <view class="adoptLi">
+          <view class="con">
+            <view class="adoptliFl">
+              <text>车牌：贵AHD933</text>
+              <text>电话：15185070538</text>
+            </view>
+          </view>
+          <view class="drivingBtn">
+            <button>拨号</button>
+            <button>接单进行中</button>
+          </view>
+        </view>
+        <view class="adoptLi">
+          <view class="con">
+            <view class="adoptliFl">
+              <text>车牌：贵AHD933</text>
+              <text>电话：15185070538</text>
+            </view>
+          </view>
+          <view class="drivingBtn">
+            <button>拨号</button>
+            <button>已完成</button>
+          </view>
+        </view>
+      </view>
+    </view>
+
+  </swiper-item>
+
+</swiper>

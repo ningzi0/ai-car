@@ -59,6 +59,12 @@
           "pathName": "pages/ceshi/ceshi",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "代驾列表",
+          "pathName": "pages/DrivingList/DrivingList",
+          "query": "",
+          "scene": null
         }
       ]
     }
